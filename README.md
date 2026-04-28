@@ -8,13 +8,13 @@ The project helps farmers and agricultural users identify diseases quickly by up
 ---
 
 ## Features
-- ✅ Detect plant leaf diseases using image upload
-- ✅ Supports **38 plant disease classes**
-- ✅ Displays prediction confidence score
-- ✅ Provides disease precautionary steps
-- ✅ User-friendly Streamlit web application
-- ✅ Fast image processing using PIL
-- ✅ Integrated Gemini AI (`gemini-1.5-flash`) for enhanced responses
+-  Detect plant leaf diseases using image upload
+-  Supports **38 plant disease classes**
+-  Displays prediction confidence score
+-  Provides disease precautionary steps
+-  User-friendly Streamlit web application
+-  Fast image processing using PIL
+-  Integrated Gemini AI (`gemini-1.5-flash`) for enhanced responses
 
 ---
 
@@ -86,6 +86,3 @@ Plant-Disease-Classification/
 4. Real-time treatment recommendations
 5. Disease severity detection
 ```
-│── model.pth
-│── requirements.txt
-│── README.md
