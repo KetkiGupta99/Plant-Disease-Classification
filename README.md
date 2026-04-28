@@ -5,6 +5,7 @@ Plant Disease Classification using CNN is a deep learning-based project develope
 
 The project helps farmers and agricultural users identify diseases quickly by uploading leaf images and receiving predictions with confidence scores and precautionary steps.
 
+Model trained on Kaggle (GPU), web app developed and tested on Google Colab
 ---
 
 ## Features
@@ -40,7 +41,8 @@ The project helps farmers and agricultural users identify diseases quickly by up
 ---
 
 ## Model Architecture
-The model is based on **ResNet9 CNN Architecture**.
+**ResNet9 CNN Architecture** 
+A lightweight yet powerful 9-layer residual network featuring skip connections, Batch Normalization, and ReLU activations throughout. Trained end-to-end using CrossEntropyLoss and evaluated without gradient computation using torch.no_grad().
 
 ### Configuration:
 - Activation Function: ReLU
@@ -70,6 +72,18 @@ The model is deployed using **Streamlit** for an interactive web interface.
 
 ---
 
+### Set Up Gemini API Key
+1. This app uses Gemini 1.5 Flash to generate disease descriptions and precautionary steps. Get a free API key at Google AI Studio
+```export GOOGLE_API_KEY="your_gemini_api_key_here"```
+
+2. Or set it directly in app.py:
+```
+import google.generativeai as genai
+genai.configure(api_key="your_gemini_api_key_here")
+```
+## Usage
+Run Streamlit App Locally on Colab: ```Open http://localhost:8501, upload a leaf image, and get an instant prediction with AI-generated precaution steps!```
+
 ## Project Structure
 ```
 Plant-Disease-Classification/
@@ -80,9 +94,18 @@ Plant-Disease-Classification/
 
 ## Future Enhancements
 ```
-1. Live camera disease detection
-2. Multi-language support
-3. Mobile app integration
-4. Real-time treatment recommendations
-5. Disease severity detection
+1. Deploy on Streamlit Cloud or Hugging Face Spaces for public access
+2. Fine-tune on real-world, field-captured leaf images to reduce validation loss gap
+3. Add Grad-CAM heatmaps to visually highlight the diseased region on the leaf
+4. Experiment with EfficientNet-B4 or Vision Transformer (ViT) for stronger generalization
+5. Support multi-language disease advice for farmers in regional languages
+6. Add batch upload — analyze multiple leaves in one session
+```
+
+## Acknowledgements
+```
+PlantVillage Dataset — Kaggle
+PyTorch — Deep learning framework
+Streamlit — Web app framework
+Google Gemini 1.5 Flash — Generative AI for disease descriptions
 ```
