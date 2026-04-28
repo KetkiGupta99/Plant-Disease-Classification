@@ -5,7 +5,7 @@ Plant Disease Classification using CNN is a deep learning-based project develope
 
 The project helps farmers and agricultural users identify diseases quickly by uploading leaf images and receiving predictions with confidence scores and precautionary steps.
 
-Model trained on Kaggle (GPU), web app developed and tested on Google Colab
+```Model trained on Kaggle (GPU), web app developed and tested on Google Colab```
 ---
 
 ## Features
@@ -104,8 +104,8 @@ Plant-Disease-Classification/
 
 ## Acknowledgements
 ```
-PlantVillage Dataset — Kaggle
-PyTorch — Deep learning framework
-Streamlit — Web app framework
-Google Gemini 1.5 Flash — Generative AI for disease descriptions
+1. PlantVillage Dataset — Kaggle
+2. PyTorch — Deep learning framework
+3. Streamlit — Web app framework
+4. Google Gemini 1.5 Flash — Generative AI for disease descriptions
 ```
