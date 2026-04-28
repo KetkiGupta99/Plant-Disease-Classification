@@ -3,9 +3,9 @@
 ## Project Overview
 Plant Disease Classification using CNN is a deep learning-based project developed to detect and classify plant leaf diseases from images. The model is trained on the **PlantVillage Dataset** from Kaggle containing **38 classes** of healthy and diseased plant leaves.
 
-The project helps farmers and agricultural users identify diseases quickly by uploading leaf images and receiving predictions with confidence scores and precautionary steps.
+The project helps farmers and agricultural users identify diseases quickly by uploading leaf images and receiving predictions with confidence scores and precautionary steps. 
 
-```Model trained on Kaggle (GPU), web app developed and tested on Google Colab```
+## Model trained on Kaggle (GPU), web app developed and tested on Google Colab
 ---
 
 ## Features
